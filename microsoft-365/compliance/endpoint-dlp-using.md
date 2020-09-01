@@ -59,13 +59,14 @@ If the list mode is set to **Block**, then user will not be able to upload sensi
 
 If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains is not allowed.
 
-### Unallowed apps
-
-When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
-
 ### Unallowed browsers
 
 You add browsers, identified by their process names, that will be blocked from accessing files that match the conditions of an enforced  a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+Combining upload enforcement in Edge Chromium with the ability to block unallowed browsers from accessing sensitive files provides and hollistic cloud egress enforcement, assuring your sensitive data isn't uploaded to unallowed service domain through any browser.
+
+### Unallowed apps
+
+When a policy's **Access by unallowed apps and browsers** setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
 ## Tying DLP settings together
 
